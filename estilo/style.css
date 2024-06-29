@@ -1,0 +1,296 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); /* - fonte de título */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /* - fonte de subititulo e menu de navegação */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* - título das seções */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'); /* - textos gerais */
+
+:root {
+    --fonte001: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte002: 'Anton', cursive;
+    --fonte003: 'Oswald', cursive;
+    --fonte004: 'Bebas Neue', cursive;
+    --fonte005: 'Lexend', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    color: white;
+    padding: 25px;
+    margin: 15px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: var(--fonte003);
+    font-size: 16px;
+    transition-duration: 0.7s;
+}
+
+nav > a:hover {
+    background-color: #21202094;
+    color: lightgray;
+    font-size: 17px;
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+#container {
+    width: 98.9vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 7px 7px rgb(255, 255, 255);
+}
+
+section {
+    width: 98.9vw;
+    height: 820px;
+}
+
+section > h1 {
+    text-align: center;
+    padding-top: 160px;
+    font-family: var(--fonte003);
+    color: white;
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+section > p { 
+    color: white;
+    text-align: center;
+    font-family: var(--fonte003);
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+section#img01 {
+    background-image: url('../imagens/wallpaper001.jpg');
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0px 8px 7px rgba(74, 74, 74, 0.485);
+}
+
+h2#sobre {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--fonte003);
+    font-weight: lighter;
+    font-size: 2.5em;
+    margin-top: 50px;
+}
+
+p.normal {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-align: left;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#container2, #container3, #container4, #contatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#challenger {
+    background-color: black;
+    background-image: url('../imagens/challenger-hellcat.jpg');
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 870px;
+    background-repeat: no-repeat;
+    margin-top: -482px;
+    margin-bottom: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#challenger > article {
+    width: 570px;
+    height: 380px;
+    background-color: rgba(122, 122, 122, 0.941);
+    margin-left: 80px;
+    border-radius: 5px;
+    padding: 15px;
+    transition-duration: 0.8s;
+}
+
+section#challenger > article:hover {
+    text-align: justify;
+    height: 400px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(79, 79, 79, 0.6);
+}
+
+section#challenger > article > h2 {
+    text-align: center;
+    font-family: var(--fonte004);
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+section#challenger > article > p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 8px;
+}
+
+section#shelby {
+    background-color: black;
+    background-image: url('../imagens/mustang-shelby.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 870px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 190px;
+}
+
+section#shelby > article {
+    width: 570px;
+    height: 350px;
+    background-color: rgba(122, 122, 122, 0.941);
+    margin-right: 80px;
+    border-radius: 5px;
+    padding: 15px;
+    transition-duration: 0.8s;
+}
+
+section#shelby > article:hover {
+    text-align: justify;
+    height: 390px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: -5px 5px 6px rgba(79, 79, 79, 0.6);
+}
+
+section#shelby > article > h2 {
+    text-align: center;
+    font-family: var(--fonte004);
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+section#shelby > article > p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 8px;
+}
+
+.seta {
+    width: 60px;
+    margin-top: -100px;
+    padding-top: -170;
+    padding-bottom: 100px;
+}
+
+section#ZL1 {
+    background-color: black;
+    background-image: url('../imagens/camaro-zl1.jpg');
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 870px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+section#ZL1> article {
+    width: 570px;
+    height: 350px;
+    background-color: rgba(122, 122, 122, 0.941);
+    margin-right: 80px;
+    border-radius: 5px;
+    padding: 15px;
+    transition-duration: 0.8s;
+}
+
+section#ZL1 > article:hover {
+    text-align: justify;
+    height: 390px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px rgba(79, 79, 79, 0.6);
+}
+
+section#ZL1 > article > h2 {
+    text-align: center;
+    font-family: var(--fonte004);
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+section#ZL1 > article > p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 8px;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14;
+    font-weight: lighter;
+    text-align: center;
+    padding: 25px;
+    background-color: white;
+    color: black;
+}
+
+footer > div > a > img {
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
