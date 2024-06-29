@@ -41,17 +41,18 @@ nav > a {
     color: white;
     text-decoration: none;
     padding: 13px;
+    font-weight: lighter;
     padding-left: 30px;
     padding-right: 30px;
     font-family: var(--fonte003);
-    font-size: 16px;
+    font-size: 17px;
     transition-duration: 0.7s;
 }
 
 nav > a:hover {
     background-color: #21202094;
     color: lightgray;
-    font-size: 17px;
+    font-size: 1px;
     border-radius: 3px;
     text-decoration: underline;
 }
@@ -284,7 +285,8 @@ footer {
     font-size: 14;
     font-weight: lighter;
     text-align: center;
-    padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 8px;
     background-color: white;
     color: black;
 }
